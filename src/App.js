@@ -26,7 +26,7 @@ class App extends Component {
         }}
       >
 
-        <img src={process.env.PUBLIC_URL + backSideImage} style={{ maxWidth: '100%', maxHeight: '100%' }}/>
+        <img src={process.env.PUBLIC_URL + '/' + backSideImage} style={{ maxWidth: '100%', maxHeight: '100%' }}/>
 
       </FrontSide>
       <BackSide
@@ -35,7 +35,7 @@ class App extends Component {
           borderStyle: 'solid'
         }}>
 
-        <img src={process.env.PUBLIC_URL + frontSideImage } style={{ maxWidth: '100%', maxHeight: '100%' }} />
+        <img src={process.env.PUBLIC_URL + '/' + frontSideImage } style={{ maxWidth: '100%', maxHeight: '100%' }} />
 
       </BackSide>
     </Flippy>);
