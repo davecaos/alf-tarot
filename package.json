@@ -2,7 +2,7 @@
   "name": "alf-tarot",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://davecaos.github.io/alf-tarot",
+  "homepage": "https://davecaos.github.io/alf-tarot/index.html",
   "dependencies": {
     "add": "^2.0.6",
     "gh-pages": "^2.0.1",
