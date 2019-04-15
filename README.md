@@ -1,1 +1,1 @@
-# alf_tarot
+# Gordon Shumway's Tarot
