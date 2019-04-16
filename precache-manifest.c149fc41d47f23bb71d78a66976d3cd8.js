@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/alf-tarot/static/js/runtime~main.279413d3.js"
   },
   {
-    "revision": "a7cfb6ab97581a525ba0",
-    "url": "/alf-tarot/static/js/main.b535a2f1.chunk.js"
+    "revision": "c7f3957394a82bcfdc20",
+    "url": "/alf-tarot/static/js/main.8f0edf6e.chunk.js"
   },
   {
     "revision": "7968b9ba3b70125abd50",
     "url": "/alf-tarot/static/js/2.b199cbbb.chunk.js"
   },
   {
-    "revision": "a7cfb6ab97581a525ba0",
+    "revision": "c7f3957394a82bcfdc20",
     "url": "/alf-tarot/static/css/main.9bb31b2f.chunk.css"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/alf-tarot/static/css/2.f8a483ed.chunk.css"
   },
   {
-    "revision": "52e4de0a5091a1a04eef927f9869e6d1",
+    "revision": "be25e401f0aa46a28ba6a0be644bb96d",
     "url": "/alf-tarot/index.html"
   }
 ];
