@@ -2,7 +2,7 @@
   "name": "alf-tarot",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://davecaos.github.io/alf-tarot/index.html",
+  "homepage": "https://davecaos.github.io/alf-tarot/",
   "dependencies": {
     "add": "^2.0.6",
     "gh-pages": "^2.0.1",
@@ -18,9 +18,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  },
+ },
   "eslintConfig": {
     "extends": "react-app"
   },

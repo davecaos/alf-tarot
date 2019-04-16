@@ -28,7 +28,7 @@ class App extends Component {
 
     }
 
-    let audio = new Audio('/alf-series-tv.mp3');
+    let audio = new Audio(process.env.PUBLIC_URL +'/alf-series-tv.mp3');
     audio.play();
   }
 

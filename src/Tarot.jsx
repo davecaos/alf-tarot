@@ -63,11 +63,11 @@ class Tarot extends Component {
     >
 
       <FrontSide style={{cardStyle}}>
-        <img src={'/' + backSideImage} style={{ maxWidth: '100%', maxHeight: '100%' }}/>
+        <img src={process.env.PUBLIC_URL + '/' + backSideImage} style={{ maxWidth: '100%', maxHeight: '100%' }}/>
       </FrontSide>
 
       <BackSide style={{cardStyle}}>
-        <img src={ '/' + frontSideImage + '.jpg'} style={{ maxWidth: '100%', maxHeight: '100%' }} />
+        <img src={ process.env.PUBLIC_URL +'/' + frontSideImage + '.jpg'} style={{ maxWidth: '100%', maxHeight: '100%' }} />
       </BackSide>
 
     </Flippy>);
