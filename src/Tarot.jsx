@@ -41,9 +41,9 @@ class Tarot extends Component {
     }
   
     let firstCard = chooseCard(cardArray);
-    cardArray = removeElement(cardArray, this.state.firstCard);
+    cardArray = removeElement(cardArray, firstCard);
     let secondCard = chooseCard(cardArray);
-    cardArray = removeElement(cardArray, this.state.secondCard);
+    cardArray = removeElement(cardArray, secondCard);
     let thirdCard = chooseCard(cardArray);
     this.setState({ firstCard: firstCard, secondCard: secondCard , thirdCard: thirdCard});
   }
