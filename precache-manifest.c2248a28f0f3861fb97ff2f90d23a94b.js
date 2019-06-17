@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "c3d395df25ff377d12d2",
-    "url": "/alf-tarot/static/css/main.257c66fc.chunk.css"
+    "revision": "c9f0a01dfdb94bcfb7d6",
+    "url": "/alf-tarot/static/css/main.1fecab28.chunk.css"
   },
   {
-    "revision": "c3d395df25ff377d12d2",
+    "revision": "c9f0a01dfdb94bcfb7d6",
     "url": "/alf-tarot/static/js/main.84234599.chunk.js"
   },
   {
@@ -20,7 +20,11 @@ self.__precacheManifest = [
     "url": "/alf-tarot/static/js/2.b199cbbb.chunk.js"
   },
   {
-    "revision": "d15ccd3563814922d30ea3cffc3b7a9c",
+    "revision": "e5d577b58d8d95017d90d19fe324f2ad",
+    "url": "/alf-tarot/static/media/Balfomet2.e5d577b5.jpg"
+  },
+  {
+    "revision": "c2557c65e53ce7f13dbcae32be984657",
     "url": "/alf-tarot/index.html"
   }
 ];
