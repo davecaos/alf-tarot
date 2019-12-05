@@ -13,9 +13,10 @@ const style= {
   margin: 'auto'
  }
 
+ const deckSize = 32;
 
 const chooseCard = (array) => {
-  return Math.floor((Math.random() * array.length) + 1);
+  return array[Math.floor((Math.random() * array.length) + 1)];
 }
 
 class Tarot extends Component {
@@ -23,11 +24,7 @@ class Tarot extends Component {
   constructor(props) {
     super(props);
     
-    let cardArray = [];
-
-    for (let i = 1; i <= 32; i++) {
-      cardArray.push(i);
-    }
+    let cardArray =  Array.from(new Array(deckSize),(val,index)=>index+1);
 
     let firstCard = chooseCard(cardArray);
     cardArray = removeElement(cardArray, firstCard);
