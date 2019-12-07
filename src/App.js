@@ -27,9 +27,6 @@ class App extends Component {
       carta: null,
 
     }
-
-    let audio = new Audio(process.env.PUBLIC_URL +'/alf-series-tv.mp3');
-    audio.play();
   }
 
   handleButtonClick(event) {
