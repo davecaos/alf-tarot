@@ -12,30 +12,24 @@ const buttonStyle ={
   padding: 20
 };
 
-const tarotBuilder = () => {
-  return function tarotFactory(props) {
-    return <Tarot />;
-  }
-}
+
 class App extends Component {
 
   constructor(props){
     super(props);
 
     this.state = {
-      play: true,
-      carta: null,
-
+      flippy: null,
     }
   }
 
   handleButtonClick(event) {
-    let flippy = tarotBuilder();
+    let flippy = () =>{return Tarot()};
     this.setState({ flippy: flippy});
   }
 
   componentWillMount() {
-    let defaultFlippy = tarotBuilder();
+    let defaultFlippy = () =>{return Tarot()};
     this.setState({ flippy: defaultFlippy});
   }
 

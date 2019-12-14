@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import TarotCard from './TarotCard';
 
-const removeElement = (array, element) => {
-  return array.filter((value, index, arr) => {
-    return value !== element;
-  });
-}
 const style= { 
   display: 'flex',
   flexDirection: 'row',
@@ -13,39 +8,31 @@ const style= {
   margin: 'auto'
  }
 
- const deckSize = 32;
+ function Tarot()  {
 
-const chooseCard = (array) => {
-  return array[Math.floor((Math.random() * array.length) + 1)];
-}
+    let cardArray =  [ 
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32
+    ];
 
-class Tarot extends Component {
-
-  constructor(props) {
-    super(props);
-    
-    let cardArray =  Array.from(new Array(deckSize),(val,index)=>index+1);
-
-    let firstCard = chooseCard(cardArray);
-    cardArray = removeElement(cardArray, firstCard);
-
-    let secondCard = chooseCard(cardArray);
-    cardArray = removeElement(cardArray, secondCard);
-
-    let thirdCard = chooseCard(cardArray);
-
-    this.state = {
-      firstCard,
-      secondCard,
-      thirdCard
+    const chooseCardFromDeck = (array) => {
+      return array[Math.floor((Math.random() * array.length))];
     }
-  }
+    
+    const removeElement = (array, element) => {
+      return array.filter((value, index, arr) => {
+        return value !== element;
+      });
+    }
+  
+    let firstCard = chooseCardFromDeck(cardArray);
+    let secondArray = removeElement(cardArray, firstCard);
+
+    let secondCard = chooseCardFromDeck(secondArray);
+    let thirdArray = removeElement(cardArray, secondCard);
+
+    let thirdCard = chooseCardFromDeck(thirdArray);
 
 
-
-  render() {
-
-    const { firstCard, secondCard, thirdCard } = this.state;
 
     return (
         <div class="row" style={{style}}>
@@ -61,6 +48,5 @@ class Tarot extends Component {
         </div>
     );
   }
-}
 
 export default Tarot;
