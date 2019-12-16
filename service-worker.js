@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/alf-tarot/precache-manifest.0ea2c65c814300237bccc4c90cce1185.js"
+  "/alf-tarot/precache-manifest.f79e5a7e1a52f0d84f9e16fe11970387.js"
 );
 
 workbox.clientsClaim();
