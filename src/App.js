@@ -36,7 +36,7 @@ class App extends Component {
   render() {
     let TarotCards = this.state.flippy
     return (
-      <div class="container">
+      <div className="container">
         <TarotCards/>
         <button 
           style={buttonStyle} 
