@@ -21,18 +21,21 @@
 .tarot-container {
   display: flex;
   flex-direction: row;
-  width: 60%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
   margin: auto;
 }
 
 /* Card wrapper */
 .tarot-card-wrapper {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+  cursor: pointer;
 }
 
 /* Zoom overlay backdrop */
 .zoom-overlay {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -42,8 +45,49 @@
   z-index: 999;
 }
 
-.zoom-overlay.active {
-  display: block;
+/* Zoomed card - centered on screen */
+.tarot-card-wrapper.zoomed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.tarot-card-wrapper.zoomed .flippy-container {
+  width: 350px !important;
+  height: 555px !important;
+}
+
+/* Shuffle button - Elegant Card style */
+.shuffle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem auto;
+  padding: 16px 40px;
+  background: #1a0033;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.shuffle-btn:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3), inset 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.shuffle-btn svg {
+  transition: transform 0.4s ease;
+}
+
+.shuffle-btn:hover svg {
+  transform: rotate(180deg);
 }
 
 /* Mobile responsive */
@@ -69,8 +113,12 @@
   }
 
   .tarot-card-wrapper.zoomed {
-    transform: scale(1.3);
-    z-index: 1000;
-    position: relative;
+    width: auto;
+  }
+
+  .tarot-card-wrapper.zoomed .flippy-container {
+    width: 85vw !important;
+    height: auto !important;
+    aspect-ratio: 277 / 440;
   }
 }

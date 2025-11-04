@@ -1,16 +1,6 @@
 import React, { Component } from 'react';
-import Emoji from './Emoji'
 import Tarot from './Tarot'
 import './App.css';
-
-const buttonStyle ={
-  backgroundColor: '#4B0082',
-  borderStyle: 'solid',
-  color: 'white',
-  display: 'table',
-  margin: 'auto',
-  padding: 20
-};
 
 
 class App extends Component {
@@ -38,12 +28,17 @@ class App extends Component {
     return (
       <div className="container">
         <TarotCards/>
-        <button 
-          style={buttonStyle} 
-          className={"btn btn-secondary btn-lg"} 
-          onClick={this.handleButtonClick.bind(this)}> 
-          Shuffle
-          <Emoji symbol="🔁"/>
+        <button
+          className="shuffle-btn"
+          onClick={this.handleButtonClick.bind(this)}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="16 3 21 3 21 8"></polyline>
+            <line x1="4" y1="20" x2="21" y2="3"></line>
+            <polyline points="21 16 21 21 16 21"></polyline>
+            <line x1="15" y1="15" x2="21" y2="21"></line>
+            <line x1="4" y1="4" x2="9" y2="9"></line>
+          </svg>
+          Shuffle the Deck
         </button>
       </div>
        

@@ -11,12 +11,14 @@ class TarotCard extends Component {
 
     this.state = {
       backSideImage: PUBLIC_URL + '/' + this.props.backSideImage  + '.jpg',
+      isFlipped: false,
       isZoomed: false,
       isMobile: window.innerWidth <= 768
     }
 
     this.handleResize = this.handleResize.bind(this);
-    this.handleZoomClick = this.handleZoomClick.bind(this);
+    this.handleCardClick = this.handleCardClick.bind(this);
+    this.handleOverlayClick = this.handleOverlayClick.bind(this);
   }
 
   componentDidMount() {
@@ -31,10 +33,20 @@ class TarotCard extends Component {
     this.setState({ isMobile: window.innerWidth <= 768 });
   }
 
-  handleZoomClick() {
-    if (this.state.isMobile) {
-      this.setState(prevState => ({ isZoomed: !prevState.isZoomed }));
+  handleCardClick() {
+    if (!this.state.isFlipped) {
+      // First click: flip the card and zoom in
+      this.flippy.toggle();
+      this.setState({ isFlipped: true, isZoomed: true });
+    } else {
+      // Card is revealed: just zoom out, card stays face-up
+      this.setState({ isZoomed: false });
     }
+  }
+
+  handleOverlayClick() {
+    // Clicking overlay: just zoom out, card stays face-up
+    this.setState({ isZoomed: false });
   }
 
   render() {
@@ -48,12 +60,12 @@ class TarotCard extends Component {
     return (
       <div>
         {isZoomed && (
-          <div className="zoom-overlay active" onClick={this.handleZoomClick} />
+          <div className="zoom-overlay active" onClick={this.handleOverlayClick} />
         )}
-        <div className={wrapperClass} onClick={this.handleZoomClick}>
+        <div className={wrapperClass} onClick={this.handleCardClick}>
           <Flippy
             flipOnHover={false}
-            flipOnClick={true}
+            flipOnClick={false}
             flipDirection="horizontal"
             ref={(r) => this.flippy = r}
             style={flippyStyle}
