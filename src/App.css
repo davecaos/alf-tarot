@@ -34,6 +34,22 @@
   cursor: pointer;
 }
 
+/* Remove flippy black corners — show real card borders */
+.flippy-container {
+  border-radius: 16px;
+  overflow: hidden;
+  background: transparent !important;
+}
+
+.flippy-container .flippy-front,
+.flippy-container .flippy-back {
+  border-radius: 16px;
+  overflow: hidden;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
 /* Zoom overlay backdrop */
 .zoom-overlay {
   position: fixed;
