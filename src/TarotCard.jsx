@@ -39,8 +39,8 @@ class TarotCard extends Component {
       this.flippy.toggle();
       this.setState({ isFlipped: true, isZoomed: true });
     } else {
-      // Card is revealed: just zoom out, card stays face-up
-      this.setState({ isZoomed: false });
+      // Card is revealed: toggle zoom in/out
+      this.setState(prevState => ({ isZoomed: !prevState.isZoomed }));
     }
   }
 
