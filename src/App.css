@@ -99,11 +99,7 @@
 }
 
 .shuffle-btn svg {
-  transition: transform 0.4s ease;
-}
-
-.shuffle-btn:hover svg {
-  transform: rotate(180deg);
+  display: inline-block;
 }
 
 /* Mobile responsive */
