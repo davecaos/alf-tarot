@@ -21,7 +21,7 @@ import TarotCard from './TarotCard';
     let secondArray = removeElement(cardArray, firstCard);
 
     let secondCard = chooseCardFromDeck(secondArray);
-    let thirdArray = removeElement(cardArray, secondCard);
+    let thirdArray = removeElement(secondArray, secondCard);
 
     let thirdCard = chooseCardFromDeck(thirdArray);
 
