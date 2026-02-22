@@ -1,16 +1,14 @@
 {
-  "main.css": "/alf-tarot/static/css/main.fb4b11bd.chunk.css",
-  "main.js": "/alf-tarot/static/js/main.9f215bfb.chunk.js",
-  "main.js.map": "/alf-tarot/static/js/main.9f215bfb.chunk.js.map",
-  "runtime~main.js": "/alf-tarot/static/js/runtime~main.279413d3.js",
-  "runtime~main.js.map": "/alf-tarot/static/js/runtime~main.279413d3.js.map",
-  "static/css/2.a9116913.chunk.css": "/alf-tarot/static/css/2.a9116913.chunk.css",
-  "static/js/2.b199cbbb.chunk.js": "/alf-tarot/static/js/2.b199cbbb.chunk.js",
-  "static/js/2.b199cbbb.chunk.js.map": "/alf-tarot/static/js/2.b199cbbb.chunk.js.map",
-  "index.html": "/alf-tarot/index.html",
-  "precache-manifest.090776898d141b23e6307ae292ae4893.js": "/alf-tarot/precache-manifest.090776898d141b23e6307ae292ae4893.js",
-  "service-worker.js": "/alf-tarot/service-worker.js",
-  "static/css/2.a9116913.chunk.css.map": "/alf-tarot/static/css/2.a9116913.chunk.css.map",
-  "static/css/main.fb4b11bd.chunk.css.map": "/alf-tarot/static/css/main.fb4b11bd.chunk.css.map",
-  "static/media/index.css": "/alf-tarot/static/media/anvorguesa1.86c2e17a.jpg"
+  "files": {
+    "main.css": "/alf-tarot/static/css/main.e11cdda9.css",
+    "main.js": "/alf-tarot/static/js/main.71eaa8a3.js",
+    "static/media/anvorguesa1.jpg": "/alf-tarot/static/media/anvorguesa1.95e33a507eceafecf27c.jpg",
+    "index.html": "/alf-tarot/index.html",
+    "main.e11cdda9.css.map": "/alf-tarot/static/css/main.e11cdda9.css.map",
+    "main.71eaa8a3.js.map": "/alf-tarot/static/js/main.71eaa8a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e11cdda9.css",
+    "static/js/main.71eaa8a3.js"
+  ]
 }
