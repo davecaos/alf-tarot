@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/alf-tarot/static/css/main.e11cdda9.css",
-    "main.js": "/alf-tarot/static/js/main.71eaa8a3.js",
+    "main.css": "/alf-tarot/static/css/main.6a25a89a.css",
+    "main.js": "/alf-tarot/static/js/main.8977bc13.js",
     "static/media/anvorguesa1.jpg": "/alf-tarot/static/media/anvorguesa1.95e33a507eceafecf27c.jpg",
     "index.html": "/alf-tarot/index.html",
-    "main.e11cdda9.css.map": "/alf-tarot/static/css/main.e11cdda9.css.map",
-    "main.71eaa8a3.js.map": "/alf-tarot/static/js/main.71eaa8a3.js.map"
+    "main.6a25a89a.css.map": "/alf-tarot/static/css/main.6a25a89a.css.map",
+    "main.8977bc13.js.map": "/alf-tarot/static/js/main.8977bc13.js.map"
   },
   "entrypoints": [
-    "static/css/main.e11cdda9.css",
-    "static/js/main.71eaa8a3.js"
+    "static/css/main.6a25a89a.css",
+    "static/js/main.8977bc13.js"
   ]
 }
